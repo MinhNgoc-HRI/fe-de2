@@ -1,0 +1,29 @@
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+    /* fix chiều cao của các phần từ thả nổi sang trái or phải */ }
+    .row:not(:last-child) {
+      /* trick áp dụng thuộc tính margin lên tất cả các element con ngoại trừ con cuối cùng */
+      margin-bottom: 8rem; }
+    .row::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .row [class^="col-"] {
+      /* trick ^ chọn các element bắt đầu bằng col-   or   * chọn các element có class chứa từ col-    or  $ chọn kết thúc bằng col */
+      float: left; }
+      .row [class^="col-"]:not(:last-child) {
+        margin-right: 6rem; }
+    .row .col-1-of-2 {
+      width: calc( ( 100% - 6rem ) / 2);
+      /* #/{/} để sử dụng biến sass */ }
+    .row .col-1-of-3 {
+      width: calc( ( 100% - 2 * 6rem ) / 3); }
+    .row .col-2-of-3 {
+      width: calc( ( 100% -  6rem ) / 3*2); }
+    .row .col-1-of-4 {
+      width: calc( ( 100% - 3 * 6rem ) / 4); }
+    .row .col-2-of-4 {
+      width: calc( ( 100% - 2 * 6rem ) / 2); }
+    .row .col-3-of-4 {
+      width: calc( ( 100% -  6rem ) / 4*3); }

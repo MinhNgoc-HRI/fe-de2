@@ -1,0 +1,50 @@
+body{
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: @default-font-size;
+    line-height: 1.7;
+    color: @color-white;
+}
+
+.color--primary{
+    color: @color-primary;
+}
+
+.color--grey{
+    color: @color-grey-dark;
+}
+
+.heading{
+
+
+
+    &__title {
+        color: @color-black-1;
+        font-weight: 400;
+        font-size: 7rem;
+        & > span {
+            color: @color-primary;
+            font-weight: 500;
+        }
+    }
+
+
+    &__des{
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: @color-grey-dark;
+    }
+
+
+    &__link {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: @color-grey-dark;
+        border-bottom: 1px solid @color-primary;
+        text-decoration: none;
+        margin-top: 4rem;
+        display: inline-block;
+    }
+}
+
+
