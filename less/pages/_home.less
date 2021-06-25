@@ -179,6 +179,17 @@
         color: @color-black-1;
         font-size: 4.2rem;
         font-weight: 600;
+        position: relative;
+        &::before{
+            content: "PRODUCT";
+            font-size: 8rem;
+            font-weight: 600;
+            position: absolute;
+            top: -45%;
+            left: -2%;
+            color: rgba(@color-dark-1,.04);
+
+        }
     }
 
     &__right{
@@ -189,6 +200,7 @@
 
         & > span:hover{
             color: @color-primary;
+            cursor: pointer;
         }
     }
 }
@@ -206,6 +218,7 @@
     height: 24.6rem;
     background-color: @color-grey-dark-3;
     position: relative;
+    cursor: pointer;
     &__img {
         position: absolute;
         top: 50%;
@@ -272,7 +285,7 @@
 }
 .card-item{
     width: 36rem;
-
+    cursor: pointer;
 
 
     &__img{
@@ -380,7 +393,7 @@
         font-size: 1.3rem;
         font-weight: 550;
         margin-top: 1rem;
-
+        cursor: pointer;
 
         &:hover{
             color: @color-primary;
@@ -404,4 +417,26 @@
 .st{
     color: #c1c1c1;
     font-size: 1.4rem;
+}
+
+
+#shopcard{
+    position: relative;
+
+    &::after{
+        text-align: center;
+        line-height: 1.5rem;
+        content: "9";
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: .8rem;
+        font-weight: 500;
+        color: white;
+        border-radius: 100px;
+        background-color: red;
+        position: absolute;
+        z-index: 100;
+        top: -2px;
+        left: 10px;
+    }
 }

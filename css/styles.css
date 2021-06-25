@@ -67,6 +67,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.cusor {
+  cursor: pointer;
+}
 .header {
   height: 21.2rem;
 }
@@ -158,6 +161,7 @@ body {
   color: #0ca8c9;
   font-size: 1.6rem;
   margin-left: 2rem;
+  cursor: pointer;
 }
 .cat-menu__right {
   list-style-type: none;
@@ -166,6 +170,7 @@ body {
   display: inline-block;
   text-transform: uppercase;
   font-weight: 500;
+  cursor: pointer;
 }
 .cat-menu__right > li:not(:last-child) {
   margin-right: 6rem;
@@ -177,10 +182,11 @@ body {
   display: inline-block;
   text-transform: uppercase;
   font-weight: 500;
+  cursor: pointer;
 }
 .slider {
   height: 75rem;
-  background-image: url('../css/icon/slider.png');
+  background-image: url('/css/icon/slider.png');
   background-size: cover;
   position: relative;
 }
@@ -406,6 +412,16 @@ body {
   color: #000000;
   font-size: 4.2rem;
   font-weight: 600;
+  position: relative;
+}
+.section-sell__left::before {
+  content: "PRODUCT";
+  font-size: 8rem;
+  font-weight: 600;
+  position: absolute;
+  top: -45%;
+  left: -2%;
+  color: rgba(34, 34, 34, 0.04);
 }
 .section-sell__right {
   color: #777;
@@ -414,6 +430,7 @@ body {
 }
 .section-sell__right > span:hover {
   color: #0ca8c9;
+  cursor: pointer;
 }
 .section-product {
   height: 81rem;
@@ -424,6 +441,7 @@ body {
   height: 24.6rem;
   background-color: #f5f5f5;
   position: relative;
+  cursor: pointer;
 }
 .card__img {
   position: absolute;
@@ -449,7 +467,7 @@ body {
 .section-new {
   height: 65rem;
   width: 100%;
-  background-image: url('../css/icon/bg.png');
+  background-image: url('/css/icon/bg.png');
   position: relative;
 }
 .heading-3st {
@@ -480,10 +498,11 @@ body {
 }
 .card-item {
   width: 36rem;
+  cursor: pointer;
 }
 .card-item__img {
   height: 24rem;
-  background-image: url('../css/icon/a.png');
+  background-image: url('/css/icon/a.png');
   background-position: center;
 }
 .card-item__detail--tittle {
@@ -570,6 +589,7 @@ body {
   font-size: 1.3rem;
   font-weight: 550;
   margin-top: 1rem;
+  cursor: pointer;
 }
 .footer-1st__item--li:hover {
   color: #0ca8c9;
@@ -590,4 +610,23 @@ body {
 .st {
   color: #c1c1c1;
   font-size: 1.4rem;
+}
+#shopcard {
+  position: relative;
+}
+#shopcard::after {
+  text-align: center;
+  line-height: 1.5rem;
+  content: "9";
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 100px;
+  background-color: red;
+  position: absolute;
+  z-index: 100;
+  top: -2px;
+  left: 10px;
 }
