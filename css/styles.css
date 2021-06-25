@@ -467,7 +467,7 @@ body {
 .section-new {
   height: 65rem;
   width: 100%;
-  background-image: url('/css/icon/bg.png');
+  background-image: url('../css/icon/bg.png');
   position: relative;
 }
 .heading-3st {
@@ -502,7 +502,7 @@ body {
 }
 .card-item__img {
   height: 24rem;
-  background-image: url('/css/icon/a.png');
+  background-image: url('../css/icon/a.png');
   background-position: center;
 }
 .card-item__detail--tittle {
