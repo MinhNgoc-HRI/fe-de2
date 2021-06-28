@@ -13,6 +13,28 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link"><span>01 </span>Home</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>02 </span>About</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>03 </span>Service</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>04 </span>Blog</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>05 </span>Page</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"><span>05 </span>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
     <header class="header">
         <div class="header-1st">
             <div class="container">
@@ -78,7 +100,7 @@
             <div class="container">
                 <div class="container--left">
                     <ul class="cat-menu__left">
-                        <li></li>
+                        <li ></li>
                         <li>Category</li>
                     </ul>
                 </div>
@@ -114,32 +136,34 @@
             </div>
         </div>
         <div class="container">
-            <div class="section-vervice">
-                <i class="icon-ecommerce-cart section-vervice__icon"></i>
-                <div class="section-vervice__des">
-                    <p class="color--grey">Free Shipping</p>
-                    <p class="color--grey">Free shipping for all US order</p>
+            <div class="flex-service">
+                <div class="section-vervice">
+                    <i class="icon-ecommerce-cart section-vervice__icon"></i>
+                    <div class="section-vervice__des">
+                        <p class="color--grey">Free Shipping</p>
+                        <p class="color--grey">Free shipping for all US order</p>
+                    </div>
                 </div>
-            </div>
-            <div class="section-vervice">
-                <i class="icon-basic-headset section-vervice__icon"></i>
-                <div class="section-vervice__des">
-                    <p class="color--grey">Support 24/7</p>
-                    <p class="color--grey">We support 24 hour a day</p>
+                <div class="section-vervice">
+                    <i class="icon-basic-headset section-vervice__icon"></i>
+                    <div class="section-vervice__des">
+                        <p class="color--grey">Support 24/7</p>
+                        <p class="color--grey">We support 24 hour a day</p>
+                    </div>
                 </div>
-            </div>
-            <div class="section-vervice">
-                <i class="icon-ecommerce-bag-refresh section-vervice__icon"></i>
-                <div class="section-vervice__des">
-                    <p class="color--grey">30 Day Returns</p>
-                    <p class="color--grey">you have 30 days to return</p>
+                <div class="section-vervice">
+                    <i class="icon-ecommerce-bag-refresh section-vervice__icon"></i>
+                    <div class="section-vervice__des">
+                        <p class="color--grey">30 Day Returns</p>
+                        <p class="color--grey">you have 30 days to return</p>
+                    </div>
                 </div>
-            </div>
-            <div class="section-vervice">
-                <i class="icon-ecommerce-creditcard section-vervice__icon"></i>
-                <div class="section-vervice__des">
-                    <p class="color--grey">Secure Payment</p>
-                    <p class="color--grey">100% Secure & Sale</p>
+                <div class="section-vervice">
+                    <i class="icon-ecommerce-creditcard section-vervice__icon"></i>
+                    <div class="section-vervice__des">
+                        <p class="color--grey">Secure Payment</p>
+                        <p class="color--grey">100% Secure & Sale</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -470,7 +494,7 @@
         <div class="footer-2st">
             <div class="container">
                 <p class="st">@2018 Design by <span class="color--primary">Creative Wp</span>. All Rights Reserved. </p>
-                <img src="css/icon/ft.png" alt="">
+                <img src="css/icon/ft.png" alt="" class="logo--payment">
             </div>
         </div>
     </footer>
