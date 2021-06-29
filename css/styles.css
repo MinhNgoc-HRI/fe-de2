@@ -88,6 +88,7 @@ body {
 @media (max-width: 37.5em) {
   .container {
     width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 75em) {
@@ -124,6 +125,11 @@ body {
   display: flex;
   align-items: center;
 }
+@media (max-width: 37.5em) {
+  .header-1st {
+    display: none;
+  }
+}
 .header-contact {
   display: flex;
   align-items: center;
@@ -157,6 +163,11 @@ body {
   background-color: #ffffff;
   display: flex;
   align-items: center;
+}
+@media (max-width: 37.5em) {
+  .header-2st {
+    margin: 1rem 0;
+  }
 }
 .header-3st {
   height: 4rem;
@@ -336,9 +347,22 @@ body {
   margin: 0 auto;
   /* fix chiều cao của các phần từ thả nổi sang trái or phải */
 }
+@media (max-width: 37.5em) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .row:not(:last-child) {
   /* trick áp dụng thuộc tính margin lên tất cả các element con ngoại trừ con cuối cùng */
   margin-bottom: 8rem;
+}
+@media (max-width: 37.5em) {
+  .row:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 .row::after {
   content: "";
@@ -351,6 +375,11 @@ body {
 }
 .row [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
+}
+@media (max-width: 37.5em) {
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+  }
 }
 .row .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
@@ -725,6 +754,12 @@ body {
   height: 81rem;
   width: 100%;
 }
+@media (max-width: 37.5em) {
+  .section-product {
+    width: 100%;
+    height: auto;
+  }
+}
 .card {
   width: 100%;
   height: 24.6rem;
@@ -759,6 +794,11 @@ body {
   background-image: url('../css/icon/bg.png');
   position: relative;
 }
+@media (max-width: 37.5em) {
+  .section-new {
+    height: auto;
+  }
+}
 .heading-3st {
   font-size: 4.2rem;
   color: #000000;
@@ -766,6 +806,11 @@ body {
   top: 22%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 37.5em) {
+  .heading-3st {
+    top: 10%;
+  }
 }
 .heading-3st::before {
   content: "HOT NEWS";
@@ -784,6 +829,14 @@ body {
   height: 34rem;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 37.5em) {
+  .card-new {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
 }
 .card-item {
   width: 36rem;
@@ -838,7 +891,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .section-sign__form {
-    width: 50rem;
+    width: 80%;
     height: 5rem;
   }
 }

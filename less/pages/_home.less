@@ -243,6 +243,10 @@
 .section-product{
     height: 81rem;
     width: 100%;
+    .reponds(phone,{
+        width: 100%;
+        height: auto;
+    })
 }
 
 
@@ -285,6 +289,9 @@
 
     background-image: url('../css/icon/bg.png');
     position: relative;
+    .reponds(phone,{
+        height: auto;
+    });
 }
 
 
@@ -296,6 +303,9 @@
     left: 50%;
     transform: translate(-50%,-50%);
     // position: relative;
+    .reponds(phone,{
+        top: 10%;
+    });
     &::before{
         content: "HOT NEWS";
         text-align: center;
@@ -316,6 +326,12 @@
     height: 34rem;
     display: flex;
     justify-content: space-between;
+    .reponds(phone,{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    })
 }
 .card-item{
     width: 36rem;
@@ -373,7 +389,7 @@
         height: 7rem;
 
         .reponds(phone,{
-            width: 50rem;
+            width: 80%;
             height: 5rem;
         });
         background-color: @color-white;
