@@ -828,6 +828,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 37.5em) {
+  .heading-3st::before {
+    width: 60rem;
+  }
+}
 .card-new {
   width: 100%;
   margin-top: 20rem;
@@ -924,9 +929,14 @@ body {
   height: 23rem;
   background-color: #ffffff;
 }
+@media (max-width: 37.5em) {
+  .section-logo {
+    height: auto;
+  }
+}
 .logo {
   height: 100%;
-  line-height: 32rem;
+  align-self: center;
 }
 .logo__img {
   width: 100%;
