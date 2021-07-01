@@ -1,6 +1,6 @@
 .navigation {
     display: none;
-    .reponds(phone,{
+    .reponds(tab-port,{
         display: block;
     });
   &__checkbox {
@@ -8,7 +8,7 @@
   }
   
   &__button {
-    .reponds(phone,{
+    .reponds(tab-port,{
         height: 7rem;
         width: 7rem;
         background-color: @color-white;
@@ -24,7 +24,7 @@
   }
 
   &__background {
-    .reponds(phone,{
+    .reponds(tab-port,{
         height: 6rem;
         width: 6rem;
         border-radius: 50%;
@@ -108,7 +108,7 @@
     opacity: 1;
   }
 
-  .reponds(phone,{
+  .reponds(tab-port,{
     &__icon {
         position: relative;
         margin-top: 3.4rem;
@@ -158,4 +158,28 @@
     top: 0;
     transform: rotate(-45deg);
   }
+}
+
+
+
+.navi-shop{
+  display: none;
+    .reponds(tab-port,{
+        display: block;
+        position: fixed;
+        top: 14rem;
+        right: 2rem;
+        z-index: 1000;
+        width: 5rem;
+        height: 5rem;
+        text-align: center;
+        cursor: pointer;
+        & > i {
+          width: 5rem;
+          height: 5rem;
+          font-size: 2.4rem;
+          line-height: 5rem;
+          color: @color-primary;
+        }
+   })
 }
