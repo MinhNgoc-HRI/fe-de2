@@ -37,14 +37,22 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -1.5rem;
+    .reponds(tab-port,{
+        min-height: 900px;
+        row-gap: 3rem;
+        margin: 0 1.5rem;
+    });
+    // .reponds(phone,{
+    //     min-height: 900px;
+    // });
     
-
     &--left{
         width: calc(6/10*100%);
         flex: 0 0 auto;
         position: relative;
         .reponds(tab-port,{
             width: 100%;
+            height: 300px;
         });
         &__content{
             background: url('../css/icon/sale1.png') @color-grey-dark-2 no-repeat center 30%;
@@ -63,6 +71,7 @@
         
         .reponds(tab-port,{
             width: 100%;
+            height: 600px;
         });
         
         &__content{
@@ -76,9 +85,6 @@
                 flex-direction: row;
                 margin: 0;
             });
-            .reponds(phone,{
-                flex-direction: row;
-            });
             &--top{
                 flex: 0 0 auto;
                 background: url('../css/icon/sale2.png') @color-grey-dark-2 no-repeat 85% center;
@@ -86,14 +92,9 @@
                 height: calc(50% - 15px);
                 position: relative;
                 .reponds(tab-port,{
-                    width: 50%;
-                    height: 100%;
+                    width: 100%;
+                    height: 50%;
                 });
-                // .reponds(phone,{
-                //     flex: 0 0 1;
-                //     width: 100%;
-                //     height: 50%;
-                // });
             }
 
             &--bot{
@@ -103,14 +104,9 @@
                 height:  calc(50% - 15px);
                 position: relative;
                 .reponds(tab-port,{
-                    width: 50%;
-                    height: 100%;
+                    width: 100%;
+                    height: 50%;
                 });
-                // .reponds(phone,{
-                //     flex: 0 0 1;
-                //     width: 100%;
-                //     height: 50%;
-                // });
             }
         }
     }
@@ -586,7 +582,10 @@
             background-color: @color-primary;
             font-size: 1.6rem;
             color: @color-white;
-
+            transition: transform 0.3s;
+            &:active{
+            transform: translateY(.5rem);
+            }
         }
     }
 }

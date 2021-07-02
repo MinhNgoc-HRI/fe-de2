@@ -176,6 +176,13 @@
             &:not(:last-child){
                 margin-right: 6rem;
             }
+            & > a {
+                text-decoration: none;
+                color: @color-white;
+            }
+            &:hover > a {
+                text-shadow: .1rem .1rem rgba(@color-white,.8);
+            }
         }
     }
 
