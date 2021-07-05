@@ -3,13 +3,19 @@
 
 
     &-1st {
-        height: 7.2rem;
+        // height: 7.2rem;
         background-color: @color-dark-1;
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
         .reponds(tab-port,{
             display:none;
         });
+        & > .container{
+            height: 7.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
     &-contact {
@@ -32,7 +38,7 @@
             font-size: 1.6rem;
             width: 3.2rem;
             height: 3.2rem;
-            margin-right: 1.7rem;
+            margin-right: 10px;
             border: solid .1px @color-primary;
             line-height: 3.2rem;
         }
@@ -61,23 +67,35 @@
 
 
     &-2st{
-        height: 10rem;
         background-color: @color-white;
-        display: flex;
-        align-items: center;
-        .reponds(tab-port,{
-            display: none;
-        })
-    }
-
-    &-3st {
-        height: 5rem;
-        background-color: @color-primary;
-        display: flex;
-        align-items: center;
         .reponds(tab-port,{
             display: none;
         });
+        & > .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 10rem;
+
+
+            & > img {
+                height: 4.6rem;
+            }
+        }
+    }
+
+    &-3st {
+        background-color: @color-primary;
+        .reponds(tab-port,{
+            display: none;
+        });
+
+        & > .container {
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -174,7 +192,7 @@
             font-weight: 600;
             cursor: pointer;
             &:not(:last-child){
-                margin-right: 6rem;
+                margin-right: 53px;
             }
             & > a {
                 text-decoration: none;

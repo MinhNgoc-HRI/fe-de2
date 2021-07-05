@@ -15,11 +15,14 @@ body{
 }
 
 .heading{
-
+    transform: translateY(-16px);
     line-height: 1;
     animation: moveInHead .5s ease-out .75s;
-    animation-fill-mode: backwards;
-    &__title {
+    animation-fill-mode: forwards;
+    .reponds(tab-port,{
+        
+    });
+    &-1{
         color: @color-black-1;
         font-weight: 400;
         font-size: 7rem;
@@ -34,7 +37,7 @@ body{
     }
 
 
-    &__des{
+    &-2{
         font-size: 1.8rem;
         font-weight: 400;
         color: @color-grey-dark;
@@ -56,3 +59,6 @@ body{
 
 
 
+.head-1{
+    font-size: 7rem;
+}

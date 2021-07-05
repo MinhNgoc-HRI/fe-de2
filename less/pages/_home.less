@@ -35,32 +35,17 @@
 .section-sale {
     min-height: 51rem;
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 -1.5rem;
-    .reponds(tab-port,{
-        min-height: 900px;
-        row-gap: 3rem;
-        margin: 0 1.5rem;
-    });
-    // .reponds(phone,{
-    //     min-height: 900px;
-    // });
-    
+    flex-wrap: wrap; 
     &--left{
         width: calc(6/10*100%);
         flex: 0 0 auto;
         position: relative;
-        .reponds(tab-port,{
-            width: 100%;
-            height: 300px;
-        });
         &__content{
             background: url('../css/icon/sale1.png') @color-grey-dark-2 no-repeat center 30%;
-            height: 100%;
-            margin-right: 1.5rem;
+            height: 51rem;
             position: relative;
             .reponds(tab-port,{
-                width: 100%;
+                background-size: contain;
             });
         }
     
@@ -68,23 +53,12 @@
     &--right{
         width: calc(4/10*100%);
         flex: 0 0 auto;
-        
-        .reponds(tab-port,{
-            width: 100%;
-            height: 600px;
-        });
-        
         &__content{
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
             row-gap: 3rem;
-            height: 100%;
-            margin-left: 1.5rem;
-            .reponds(tab-port,{
-                flex-direction: row;
-                margin: 0;
-            });
+            height: 51rem;
             &--top{
                 flex: 0 0 auto;
                 background: url('../css/icon/sale2.png') @color-grey-dark-2 no-repeat 85% center;
@@ -92,8 +66,7 @@
                 height: calc(50% - 15px);
                 position: relative;
                 .reponds(tab-port,{
-                    width: 100%;
-                    height: 50%;
+                    background-size: contain;
                 });
             }
 
@@ -104,8 +77,7 @@
                 height:  calc(50% - 15px);
                 position: relative;
                 .reponds(tab-port,{
-                    width: 100%;
-                    height: 50%;
+                    background-size: contain;
                 });
             }
         }
@@ -116,9 +88,9 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%,-25%);
+    top: 32.5rem;
+    left: 16rem;
+    // transform: translate(-50%,);
     &__date{
         display: flex;
         
@@ -147,6 +119,7 @@
         font-size: 3rem;
         color: @color-black-1;
         font-weight: 600;
+        margin: 1.6rem 0 -1rem 0;
     }
 
     &__des{
@@ -162,19 +135,21 @@
 .ct-sale{
     line-height: 1.5;
     position: absolute;
-    top: 50%;
-    left: 30%;
+    top: 49%;
+    left: 29%;
     transform: translate(-50%,-50%);
     & > p{
         &:nth-child(1){
             color: @color-primary;
             font-size: 6rem;
             font-weight: 600;
+            line-height: 5rem;
         }
         &:nth-child(2){
+            text-transform: uppercase;
             font-size: 2.4rem;
             color: @color-black-1;
-            font-weight: 600;
+            font-weight: 500;
         }
         &:nth-child(3){
             font-size: 1.8rem;
@@ -185,14 +160,16 @@
 .ctt-sale{
     line-height: 1.5;
     position: absolute;
-    top: 50%;
-    left: 30%;
+    top: 48%;
+    left: 29%;
     transform: translate(-50%,-50%);
     & > p{
         &:nth-child(1){
             color: @color-black-1;
             font-size: 3rem;
             font-weight: 600;
+            text-transform: uppercase;
+            line-height: 4rem;
         }
         &:nth-child(2){
             font-size: 1.8rem;
@@ -344,7 +321,6 @@
 
 .section-sell{
     width: 100%;
-    margin: 0 -1.5rem;
     height: 18.3rem;
     display: flex;
     justify-content: space-between;
@@ -356,7 +332,7 @@
         font-weight: 600;
         position: relative;
         &::before{
-            content: "PRODUCT";
+            content: "PRODUCTS";
             font-size: 9rem;
             font-weight: 600;
             position: absolute;
@@ -391,8 +367,8 @@
     flex-wrap: wrap;
 }
 .card-product{
-    width: calc((100% - 4 * 30px)/4);
-    margin: 0 15px;
+    // width: calc((100% - 4 * 30px)/4);
+    // margin: 0 15px;
     // &:not(:last-child){
     //     margin-right: 30px;
     // }
@@ -450,7 +426,7 @@
 
 
 .section-new{
-    min-height: 65rem;
+    min-height: 67rem;
     width: 100%;
     background-image: url('../css/icon/bg.png');
     position: relative;
@@ -461,7 +437,7 @@
     font-size: 4.2rem;
     color: @color-black-1;
     position: absolute;
-    top: 22%;
+    top: 21%;
     left: 50%;
     transform: translate(-50%,-50%);
     // position: relative;
@@ -482,30 +458,16 @@
 }
 
 .section-new__content{
-    margin: 0 -1.5rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 22rem;
-    .reponds(tab-port,{
-        flex-direction: column;
-        align-items: center;
-    });
+    padding-top: 23rem;
 }
 .card-item{
     cursor: pointer;
-    width: calc((100% - 60px)/3);
-    &:not(:last-child){
-        margin-right: 30px;
-    }
-    .reponds(tab-port,{
-        width: auto;
-        margin: 0 1.5rem;
-    });
     &__img{
         height: 24rem;
         background-image: url('../css/icon/a.png');
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     &__detail{
@@ -513,12 +475,13 @@
             font-size: 1.6rem;
             font-weight: 700;
             color: @color-black-1;
-            margin-top: .8rem;
+            margin-top: 2rem;
         }
         &--des {
             font-size: 1.2rem;
             font-weight: 300;
             color: @color-grey-dark;
+            margin-top: 1rem;
         }
     }
 }
@@ -529,21 +492,22 @@
     height: 40rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 
 
     &__tittle{
         text-align: center;
-        margin-bottom: 6rem;
+        margin:8rem 0 6rem 0;
         &--big{
             font-size: 3.2rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
+            font-weight: 500;
+            // margin-bottom: 3rem;
         }
         &--small{
             font-size: 1.4rem;
             font-weight: 500;
+            padding-top: 1rem;
+            // margin-top: -1rem;
         }
     }
 
@@ -635,42 +599,18 @@
 .footer-1st{
     
     background-color: rgb(242,242,242);
-    &-content{
+    & > .container > .row {
         min-height: 31.5rem;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        padding-top: 6rem;
+        padding-top: 5rem;
+        .reponds(tab-port,{
+            padding: 5rem 0;
+            text-align: center;
+        })
     }
-    &__item:nth-of-type(1){
-        // min-height: 25rem;
-        flex: 4 0 auto;
-        .reponds(phone,{
-            flex: 0 0 100%;
-        });
-    }
-    &__item:nth-of-type(2){
-        // min-height: 25rem;
-        flex: 3 0 auto;
-        .reponds(phone,{
-            flex: 4 0 auto;
-        });
-    }
-    &__item:nth-of-type(3){
-        // min-height: 25rem;
-        flex: 2 0 auto;
-        .reponds(phone,{
-            flex: 4 0 auto;
-        });
-    }
-    &__item:nth-of-type(4){
-        // min-height: 25rem;
-        // background-color: red;
-        flex: 2 0 auto;
-        .reponds(phone,{
-            flex: 2 0 auto;
-        });
-    }
+
+    // &__item{
+    //     margin-top: 6rem;
+    // }
     &__item--tittle{
         color: @color-black-1;
         font-size: 1.8rem;
@@ -684,7 +624,7 @@
         color: @color-grey-dark;
         font-size: 1.3rem;
         font-weight: 550;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         cursor: pointer;
         & > a {
             text-decoration: none;
