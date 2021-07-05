@@ -105,12 +105,15 @@
             font-weight: 600;
             margin-right: 1rem;
             
-            & > span {
-                display: block;
-                margin-bottom: -.7rem;
-                font-size: 2.1rem;
-                color: @color-primary;
-
+            & > p {
+                line-height: 3rem;
+                white-space: pre;
+                & > span{
+                    display: block;
+                    margin-bottom: -.7rem;
+                    font-size: 2.1rem;
+                    color: @color-primary;
+                }
             }
         }
     }
@@ -447,7 +450,7 @@
     &::before{
         content: "HOT NEWS";
         text-align: center;
-        width: 80rem;
+        width: max-content;
         color: rgba(@color-black-1,.07);
         font-size: 9rem;
         position: absolute;
