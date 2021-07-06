@@ -1,15 +1,15 @@
 .section-vervice {
     min-height: 16.5rem;
     background-color: @color-white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .display(flex);
+    .align-items(center);
+    .justify-content(center);
     margin-right: 4rem;
     .reponds(tab-port,{
             width: 21%;
             margin-right: 0;
-            align-items: center;
-            justify-content: space-between;
+            .align-items(center);
+            .justify-content(space-between);
     });
     &__icon {
         width: 4rem;
@@ -34,7 +34,7 @@
 
 .section-sale {
     min-height: 51rem;
-    display: flex;
+    .display(flex);
     flex-wrap: wrap; 
     &--left{
         width: calc(6/10*100%);
@@ -54,9 +54,9 @@
         width: calc(4/10*100%);
         flex: 0 0 auto;
         &__content{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
+            .display(flex);
+            .flex-wrap(wrap);
+            .flex-direction(column);
             row-gap: 3rem;
             height: 51rem;
             &--top{
@@ -84,15 +84,15 @@
     }
 }
 .content-sale{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .display(flex);
+    .flex-direction(column);
+    .align-items(center);
     position: absolute;
     top: 32.5rem;
     left: 16rem;
     // transform: translate(-50%,);
     &__date{
-        display: flex;
+        .display(flex);
         
 
         &--item{
@@ -187,7 +187,7 @@
 .time-list {
     width: 27rem;
     height: 6rem;
-    display: flex;
+    .display(flex);
     position: absolute;
     top: 75%;
     left: 50%;
@@ -325,9 +325,9 @@
 .section-sell{
     width: 100%;
     height: 18.3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .display(flex);
+    .justify-content(space-between);
+    .align-items(center);
 
     &__left{
         color: @color-black-1;
@@ -366,22 +366,15 @@
 }
 
 .next-slider{
-    display: flex;
-    flex-wrap: wrap;
+    .display(flex);
+    .flex-wrap(wrap);
 }
 .card-product{
-    // width: calc((100% - 4 * 30px)/4);
-    // margin: 0 15px;
-    // &:not(:last-child){
-    //     margin-right: 30px;
-    // }
-    // .reponds(tab-port,{
-    //     width: calc((100% - 2 * 30px)/3);
-    //     &:not(:last-child){
-    //     margin: 0 1.5rem;
-        
-    // }
-    // });
+    animation: transform .8s ease;
+    &:hover > &__img{
+        transform: translateY(-5px);
+        border: 1px solid @color-grey-dark-1;
+    }
     &__img{
         height: 262px;
         background: url('../css/icon/1.png') @color-grey-dark-2 no-repeat center center;
@@ -389,9 +382,9 @@
 
     &__content{
         height: 14rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        .display(flex);
+        .flex-direction(column);
+        .align-items(center);
         color: #000;
         font-size: 1.4rem;
         font-weight: 600;
@@ -493,9 +486,9 @@
 .section-sign{
     background-color: @color-black-1;
     height: 40rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    .display(flex);
+    .align-items(center);
+    .flex-direction(column);
 
 
     &__tittle{
@@ -526,9 +519,9 @@
         background-color: @color-white;
         border: 1px solid transparent;
         border-radius: 4rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        .display(flex);
+        .justify-content(space-between);
+        .align-items(center);
 
         &--input{
             width: 50%;
@@ -567,8 +560,8 @@
 // }
 .list-logo{
     min-height: 23rem;
-    display: flex;
-    flex-wrap: wrap;
+    .display(flex);
+    .flex-wrap(wrap);
 
 }
 .logo{
@@ -653,12 +646,12 @@
     
     &-content{
         min-height: 7rem;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
+        .display(flex);
+        .flex-wrap(wrap);
+        .align-items(center);
+        .justify-content(space-between);
         .reponds(phone,{
-            flex-direction: column-reverse;
+            .flex-direction(column-reverse);
         });
     }
 }
