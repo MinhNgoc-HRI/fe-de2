@@ -1659,6 +1659,7 @@ body {
   font-weight: 600;
   line-height: 1.8;
   padding-top: 10px;
+  text-overflow: ellipsis;
 }
 .card-product__content > p:last-child {
   color: #0ca8c9;
@@ -1940,6 +1941,7 @@ body {
     flex-direction: column-reverse;
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
+    padding: 5rem;
   }
 }
 .f2-r > img {

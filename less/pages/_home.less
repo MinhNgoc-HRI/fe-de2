@@ -417,9 +417,7 @@
         font-weight: 600;
         line-height: 1.8;
         padding-top: 10px;
-        & > p:last-child{
-            
-        }
+        text-overflow: ellipsis;
         & > p:last-child{
             color: @color-primary;
             // margin-top: 1rem;
@@ -690,6 +688,7 @@
         .justify-content(space-between);
         .reponds(phone,{
             .flex-direction(column-reverse);
+            padding: 5rem;
         });
     }
 }
