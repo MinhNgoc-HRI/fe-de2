@@ -417,7 +417,10 @@
         font-weight: 600;
         line-height: 1.8;
         padding-top: 10px;
-        text-overflow: ellipsis;
+        
+        & > p:first-child{
+            text-overflow: ellipsis;
+        }
         & > p:last-child{
             color: @color-primary;
             // margin-top: 1rem;

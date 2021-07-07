@@ -1659,6 +1659,8 @@ body {
   font-weight: 600;
   line-height: 1.8;
   padding-top: 10px;
+}
+.card-product__content > p:first-child {
   text-overflow: ellipsis;
 }
 .card-product__content > p:last-child {
