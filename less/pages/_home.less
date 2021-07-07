@@ -171,6 +171,7 @@
         &:nth-child(3){
             font-size: 1.8rem;
             color: @color-grey-dark;
+            font-weight: 400;
         }
     }
 }
@@ -191,7 +192,7 @@
         &:nth-child(2){
             font-size: 1.8rem;
             color: @color-grey-dark;
-
+            font-weight: 400;
             & > span {
                 color: @color-primary;
             }
@@ -363,9 +364,14 @@
 
     &__right{
         color: @color-grey-dark;
-        font-size: 3.2rem;
-        font-weight: 100;
+        font-size: 4rem;
 
+        & > i{
+            color: @color-grey-1;
+            &:first-child{
+                margin-right: 1rem;
+            }
+        }
 
         & > i:hover{
             color: @color-primary;
@@ -409,7 +415,7 @@
         color: #000;
         font-size: 14px;
         font-weight: 600;
-        line-height: 2;
+        line-height: 1.8;
         padding-top: 10px;
         & > p:last-child{
             
@@ -454,7 +460,7 @@
     font-size: 4.2rem;
     color: @color-black-1;
     position: absolute;
-    top: 21%;
+    top: 20%;
     left: 50%;
     .transform(translate(-50%,-50%));
     // position: relative;
@@ -480,11 +486,14 @@
 .card-item{
     cursor: pointer;
     &__img{
+        // overflow: hidden;
         height: 24rem;
-        background-image: url('../css/icon/a.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        & > img {
+            width: 100%;
+            height: 100%;
+            // transform: translate(0, 0) scale(1.2);
+            object-fit: cover;
+        }
     }
 
     &__detail{
@@ -557,7 +566,7 @@
 
         &--btn{
             margin: .5rem;
-            width: 20%;
+            width: 22%;
             height: 90%;
             border: 1px solid transparent;
             border-radius: 3rem;
@@ -609,6 +618,10 @@
     }
     &:nth-of-type(5){
         background: url('../css/icon/b5.png') no-repeat center center;
+        .reponds(phone,{
+            flex: 0 0 100%;
+            height: 30rem;
+        });
     }
 }
 
@@ -637,7 +650,7 @@
         list-style: none;
     }
     &__item--li{
-        color: @color-grey-dark;
+        color: @color-grey;
         font-size: 13px;
         font-weight: 500;
         margin-top: 1.5rem;
@@ -645,17 +658,26 @@
         .reponds(phone,{
             font-size: 10px;
         });
+        & > i{
+            font-size: 16px;
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+            .reponds(phone,{
+                font-size: 13px;
+            });
+        }
         & > a {
             text-decoration: none;
-            color: @color-grey-dark;
+            color: @color-grey;
             &:hover{
                 color: @color-primary;
             }
         }
         
-        &:last-child > i {
-            margin: 3rem 1rem;
-        }
+        // &:last-child > i {
+        //     margin: 3rem 1rem;
+        // }
         & > i{
             color: @color-primary;
             margin-right: 1rem;

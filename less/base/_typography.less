@@ -15,12 +15,17 @@ body{
 }
 
 .heading{
-    transform: translateY(-16px);
+    position: absolute;
+    top: 48%;
+    left: 29%;
+    transform: translate(-50%, -50%);
     line-height: 1;
-    animation: moveInHead .5s ease-out .75s;
-    animation-fill-mode: forwards;
+    // animation: moveInHead .5s ease-out .75s;
+    // animation-fill-mode: backwards;
     .reponds(tab-port,{
-        
+        top: 70%;
+        left: 40%;
+        transform: translate(-50%, -50%);
     });
     &-1{
         color: @color-black-1;
