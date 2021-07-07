@@ -717,3 +717,10 @@
     row-gap: 30px;
   })
 }
+
+
+.transform(@content){
+  -webkit-transform: @content; /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  -ms-transform: @content; /* IE 9 */
+  transform: @content;
+}
