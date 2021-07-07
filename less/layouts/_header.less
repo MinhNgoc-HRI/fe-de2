@@ -125,7 +125,7 @@
             position: absolute;
             top: 50%;
             left: 25%;
-            transform: translate(-50%,-50%);
+            .transform(translate(-50%,-50%));
             // z-index: 100;
         }
     &__option{
@@ -156,7 +156,7 @@
         background-clip: padding-box;
         transition: transform 0.3s;
         &:active{
-            transform: translateY(.1rem);
+            .transform(translateY(.1rem));
         }
 
         & > i {
@@ -206,7 +206,7 @@
 
     &__left{
         list-style-type: none;
-        display: flex;
+        .display(flex);
         align-items: center;
         & > li{
             font-size: 1.4rem;

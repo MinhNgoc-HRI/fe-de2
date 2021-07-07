@@ -600,10 +600,6 @@
         flex: 0 0 50%;
         height: 30rem;
     });
-
-    &:hover{
-        filter: blur(100) ;
-    }
     &:nth-of-type(1){
         background: url('../css/icon/b1.png') no-repeat center center;
     }
@@ -653,20 +649,11 @@
         color: @color-grey;
         font-size: 13px;
         font-weight: 500;
-        margin-top: 1.5rem;
+        margin-top: 1.3rem;
         cursor: pointer;
         .reponds(phone,{
             font-size: 10px;
         });
-        & > i{
-            font-size: 16px;
-            &:not(:last-child){
-                margin-right: 2rem;
-            }
-            .reponds(phone,{
-                font-size: 13px;
-            });
-        }
         & > a {
             text-decoration: none;
             color: @color-grey;
@@ -681,11 +668,14 @@
         & > i{
             color: @color-primary;
             margin-right: 1rem;
-            font-size: 13px;
+            font-size: 16px;
             font-weight: 600;
-            margin-top: 1rem;
+            // margin-top: .7rem;
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
             .reponds(phone,{
-                font-size: 10px;
+                font-size: 13px;
             });
         }
     }
@@ -718,7 +708,8 @@
 
 
 
-#shopcard{
+#shopcard,
+#shopcard1{
     position: relative;
 
     &::after{
