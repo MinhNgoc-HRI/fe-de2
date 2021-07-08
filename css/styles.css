@@ -823,12 +823,12 @@ body {
 .seach::after {
   content: "";
   width: 0.15rem;
-  height: 2rem;
+  height: 2.5rem;
   background-color: #ebebeb;
   display: inline-block;
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 29%;
   -webkit-transform: translate(-50%, -50%);
   /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
   -ms-transform: translate(-50%, -50%);
@@ -1622,21 +1622,61 @@ body {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
 }
-.card-product {
-  animation: transform 0.8s ease;
-}
 .card-product:hover > .card-product__img {
-  -webkit-transform: translateY(-5px);
+  border: 1px solid ;
+  border-radius: 5px;
+}
+.card-product:hover > .card-product__img > :first-child {
+  -webkit-transform: translateX(-70%);
   /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-  -ms-transform: translateY(-5px);
+  -ms-transform: translateX(-70%);
   /* IE 9 */
-  transform: translateY(-5px);
-  border: 1px solid #ebebeb;
+  transform: translateX(-70%);
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+@media (max-width: 37.5em) {
+  .card-product:hover > .card-product__img > :first-child {
+    -webkit-transform: translateX(-50%);
+    /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: translateX(-50%);
+    /* IE 9 */
+    transform: translateX(-50%);
+  }
+}
+.card-product:hover > .card-product__img > a > img {
+  transition: all 0.5s ease-in;
+  -webkit-transform: scale(0.8);
+  /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  -ms-transform: scale(0.8);
+  /* IE 9 */
+  transform: scale(0.8);
+  filter: blur(2px) brightness(80%);
 }
 .card-product__img {
   height: 262px;
   text-align: center;
   background-color: #f0f0f0;
+  position: relative;
+}
+.card-product__img-list-i {
+  height: 100%;
+  font-size: 26px;
+  color: #0ca8c9;
+  display: flex;
+  -webkit-display: flex;
+  -ms-display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+@media (max-width: 37.5em) {
+  .card-product__img-list-i {
+    font-size: 20px;
+  }
 }
 .card-product__img > a > img {
   width: 100%;
