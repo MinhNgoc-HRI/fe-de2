@@ -856,7 +856,7 @@ body {
   margin-right: 4rem;
 }
 .seach__input {
-  width: 34rem;
+  width: 37rem;
   height: 100%;
   background-color: #ffffff;
   outline: none;
@@ -868,7 +868,6 @@ body {
   background-color: #0ca8c9;
   outline: none;
   border: none;
-  border: 1px solid #ebebeb;
   border-radius: 0 100px 100px 0;
   background-clip: padding-box;
   transition: transform 0.3s;
@@ -891,7 +890,7 @@ body {
   line-height: 4rem;
   color: #0ca8c9;
   font-size: 2.7rem;
-  margin-left: 2rem;
+  margin-left: 1.8rem;
   cursor: pointer;
 }
 .cat-menu__right {
@@ -1192,16 +1191,16 @@ body {
     top: 14rem;
     right: 2rem;
     z-index: 200;
-    width: 5rem;
-    height: 5rem;
+    width: 50px;
+    height: 50px;
     text-align: center;
     cursor: pointer;
   }
   .navi-shop > i {
-    width: 5rem;
-    height: 5rem;
-    font-size: 2.4rem;
-    line-height: 5rem;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
     color: #0ca8c9;
   }
 }
@@ -1515,7 +1514,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .ctt-sale > p:nth-child(1) {
-    font-size: 20;
+    font-size: 20px;
     line-height: 40px;
   }
 }
@@ -2128,11 +2127,11 @@ body {
 #shopcard::after,
 #shopcard1::after {
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 15px;
   content: "9";
-  width: 1.5rem;
-  height: 1.5rem;
-  font-size: 0.8rem;
+  width: 15px;
+  height: 15px;
+  font-size: 8px;
   font-weight: 500;
   color: white;
   border-radius: 100px;
